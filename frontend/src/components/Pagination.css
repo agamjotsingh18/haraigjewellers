@@ -1,0 +1,44 @@
+/* Pagination.css */
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2e2e2e;
+    padding: 10px 110px;
+  }
+  
+  .pagination-numbers {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .page-number {
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2e2e2e;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-number:hover {
+    background-color: #ddd;
+  }
+  
+  .page-number.active {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .page-dots {
+    color: #666;
+  }
+  
+  .pagination-info {
+    font-size: 14px;
+    color: #333;
+  }
+  

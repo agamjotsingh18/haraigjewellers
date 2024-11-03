@@ -1,0 +1,127 @@
+/* Full-width container styling */
+.big-carousel-container {
+    width: 99vw;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    position: relative;
+    color: white;
+  }
+  
+  /* Image styling */
+  .carousel-image {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: filter 0.3s ease;
+  }
+  
+  /* Overlay content */
+  .carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    max-width: 400px;
+    text-align: left;
+    z-index: 2;
+  }
+  
+  /* Animation applied only when the .animate class is added */
+  .carousel-content.animate {
+    animation: slideIn 0.6s ease forwards; /* Animation timing */
+  }
+  
+  /* Keyframe for slide-in animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px); /* Start slightly off to the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End in the original position */
+    }
+  }
+  
+  .carousel-content h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .carousel-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .shop-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff8a65;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-button:hover {
+    background-color: #ff7043;
+  }
+  
+  /* Dots styling */
+  .slick-dots {
+    bottom: 20px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: white;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff8a65;
+  }
+  
+  /* Arrows styling */
+  .slick-prev, .slick-next {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 25%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 2;
+  }
+  
+  .slick-prev {
+    left: 15px;
+  }
+  
+  .slick-next {
+    right: 15px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carousel-content {
+      left: 5%;
+    }
+    .carousel-content h2 {
+      font-size: 1.5rem;
+    }
+    .carousel-content p {
+      font-size: 1rem;
+    }
+  }
+  

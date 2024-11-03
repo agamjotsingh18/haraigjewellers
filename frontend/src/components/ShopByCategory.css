@@ -1,0 +1,70 @@
+/* ShopByCategory.css */
+.shop-by-category {
+    padding: 0 110px;
+    /* margin: 0; */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+.header h1{
+font-size: 38px;
+padding: 10px 0;
+margin: 0;
+}
+
+.header a {
+      font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    
+  }
+  
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .category-card {
+    width: 191.5px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+z-index: 2;
+  }
+  
+
+  .category-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+
+  }
+
+  .category-image:hover {
+    transform: scale(1.1); /* Scale up the image a bit more on hover */
+  }
+  
+  .category-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .category-title {
+    text-align: center;
+    /* padding: 10px; */
+    font-weight: bolder;
+    background-color: #fff;
+    font-size: 16px;
+  }
+  
